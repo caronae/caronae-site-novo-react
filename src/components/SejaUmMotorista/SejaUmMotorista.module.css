@@ -1,117 +1,162 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-.sejaUmMotorista {
+@media only screen and (min-width: 0px) {
+  .sejaUmMotorista {
+    font-size: 53%;
     position: relative;
+    margin: auto;
     display: flex;
-    width: 100%;
-    height: 467px;
-    margin: 180px 0px;
-    justify-content: space-around;
-}
+    width: 72.1875em;
+    height: 30em;
+    gap: 7em;
+  }
 
-.cards {
+  .cards {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-}
+    gap: 1.5625em;
+  }
 
-.cardsRow {
+  .cardsRow {
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 25px;
-}
+    gap: 1.5625em;
+  }
 
-.iconCard {
+  .iconCard {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 223px;
-    height: 223px;
-    border-radius: 18px;
-}
+    width: 13.9375em;
+    height: 13.9375em;
+    border-radius: 1.1250em;
+  }
 
-.imageTextCard {
+  .iconCard img{
+    width: 5;
+  }
+
+  .imageTextCard {
     position: relative;
     display: flex;
     align-items: center;
-    width: 356px;
-    height: 223px;
-    border-radius: 18px;
-}
+    width: 22.2500em;
+    height: 13.9375em;
+    border-radius: 1.1250em;
+  }
 
-.imageTextCard > h1, .textImageCard > h1 {
+  .imageTextCard h1, .textImageCard   h1 {
     font-family: Ubuntu, sans-serif;
     color: rgba(255, 255, 255, 1);
     font-weight: 600;
-    font-size: 24px;
-    margin: 20px;
-}
+    font-size: 1.5000em;
+    margin: 1.2500em;
+  }
 
-.textImageCard {
+  .imageTextCard img {
+    width: 11.8750em;
+  }
+
+  .textImageCard {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 356px;
-    height: 223px;
-    border-radius: 18px;
-}
+    width: 22.2500em;
+    height: 13.9375em;
+    border-radius: 1.1250em;
+  }
 
-.content {
+  .textImageCard img {
+    width: 11.8750em;
+  }
+
+  .content {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 480px;
-    margin: 80px;
-}
+    width: 30.0000em;
+    margin: auto;
+  }
 
-.content > h1 {
+  .content h1 {
     position: relative;
-    font-size: 32px;
+    font-size: 2.0000em;
     font-family: Poppins, sans-serif;
     font-weight: 600;
     color: rgba(0,0,0,1);
-    margin-bottom: 10px;
-}
+    margin-bottom: 0.6250em;
+  }
 
-.content > h2 {
+  .content h2 {
     position: relative;
-    font-size: 14px;
+    font-size: 0.8750em;
     font-family: Poppins, sans-serif;
     font-weight: 600;
     color: rgba(70,70,70,1);
-    margin-bottom: 30px;
-}
+    margin-bottom: 1.8750em;
+  }
 
-.content > p {
+  .content p {
     position: relative;
     font-family: Lato, sans-serif;
     color: rgba(70,70,70,1);
-    margin-bottom: 14px;
+    font-size: 1em;
+    margin-bottom: 0.8750em;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 1.8750em;
     text-align: justify;
     text-justify: inter-word;
-}
+  }
 
-button {
+  .sejaUmMotorista button {
     position: relative;
     font-family: Karla, sans-serif;
     font-weight: 800;
-    font-size: 12px;
-    width: 290px;
-    min-height: 50px;
-    border-radius: 200px;
+    font-size: .8em;
+    padding: 1.75em 2.5em;
+    border-radius: 12.5000em;
     background-color: rgba(43, 56, 138, 1);
     color: rgba(254, 254, 254, 1);
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.1875em 0.1875em 0.6250em 0.0000em rgba(0, 0, 0, 0.3);
     cursor: pointer;
+  }
+
+  .sejaUmMotorista button:active {
+    top: 0.1250em;
+  }
 }
 
-button:active {
-    top: 2px;
+@media only screen and (min-width: 768px) {
+  .sejaUmMotorista {
+    font-size: 53%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .sejaUmMotorista {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sejaUmMotorista {
+    font-size: 89%;
+  }
+}
+ 
+@media only screen and (min-width: 1440px) {
+  .sejaUmMotorista {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .sejaUmMotorista {
+    font-size: 133%;
+  }
 }

@@ -1,16 +1,19 @@
 .container-navbar {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  margin: auto;
+  width: 86em;
+  gap: 4em;
   align-items: center;
   font-family: Karla, sans-serif;
   font-weight: 500;
   box-shadow: 0 4px 2px -2px rgba(51, 51, 51, 0.2);
 }
 
-.navbar-logo {
-  margin-left: 40px;
-  width: 192px;
-  height: 69px;
+.container-navbar img{
+  margin-left: 2.5000em;
+  width: 12.0000em;
+  height: 4.3125em;
 }
 
 .navbar-menu {
@@ -46,21 +49,17 @@
 
 .navbar-dl-button,
 .navbar-dl-button-toggle {
-  display: inline-block;
-  min-width: 121px;
-  max-width: 121px;
-  height: 51px;
-  border: none;
+  display: block;
   border: 2px solid #ba447d;
-  border-radius: 8px;
+  border-radius: 0.5000em;
   border-color: #ba447d;
-  padding: 0;
-  margin-right: 40px;
+  padding: 1em;
+  margin-right: 2.5000em;
   text-decoration: none;
   background: #fff;
   color: #ba447d;
   font-family: Karla, sans-serif;
-  font-size: 16px;
+  font-size: 1.0000em;
   font-weight: 700;
   font-style: bold;
   cursor: pointer;
@@ -121,12 +120,10 @@
   }
 
   .navbar-dl-button {
-    margin-left: 0px;
-    margin-right: 0px;
-    min-width: 100px;
-    max-width: 100px;
-    max-height: 20px;
-    font-size: 14px;
+    margin-left: 0.0000em;
+    margin-right: 0.0000em;
+    min-width: 6.2500em;
+    font-size: 0.8750em;
   }
 }
 

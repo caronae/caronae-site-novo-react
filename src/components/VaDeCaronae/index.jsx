@@ -63,13 +63,13 @@ const Roads = () => {
   return (
     <div className={ styles.roads }>
       <VerticalRoad />
-      <div style={{ display: 'flex', gap: '40px', position: 'relative', left: '-60px' }} >
+      <div style={{ display: 'flex', gap: '2.5em', position: 'relative', left: '-3.75em' }} >
         <StoreButton storeName="App Store" storeLogo={ appleLogo }
                      href={ URLCaronaeAppleAppStore } />
         <StoreButton storeName="Google Play" storeLogo={ playStoreLogo }
                      href={ URLCaronaeGooglePlayStore } />
       </div>
-      <div style={{ position: 'relative', left: '-65px' }} >
+      <div style={{ position: 'relative', left: '-4em' }} >
         <HorizontalRoad />
       </div>
     </div>

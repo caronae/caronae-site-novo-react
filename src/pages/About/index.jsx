@@ -1,4 +1,5 @@
 
+import ConhecaFrentes from '../../components/ConhecaFrentes';
 import ConhecaProjeto from '../../components/ConhecaProjeto';
 import EquipeCaronae from '../../components/EquipeCaronae';
 import Footer from '../../components/Footer';
@@ -12,6 +13,7 @@ const About = () => {
       <Navbar />
       <ConhecaProjeto/>
       <RazaoTudo />
+      <ConhecaFrentes/>
       <SeInteressouPeloProjeto/>
       <EquipeCaronae/>
       <Footer/>;

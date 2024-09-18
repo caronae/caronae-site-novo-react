@@ -13,9 +13,9 @@ export default function ConhecaFrentes() {
             do Caronaê
           </h2>
           <p>
-            Os membros do projeto de extensão Caronaê atuam em três
-            frentes principais: desenvolvimento, comunicação e dados.
-            Conheça elas ao lado.
+            Os membros do projeto de extensão Caronaê atuam <br/>
+            em três frentes principais: desenvolvimento,
+            comunicação e dados. Conheça elas ao lado.
           </p>
         </div>
         <div className="caixaAzul">

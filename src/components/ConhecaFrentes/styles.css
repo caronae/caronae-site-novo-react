@@ -10,6 +10,9 @@
     margin: 0 auto;
     
 }
+.texto{
+    padding-right: 60px;
+}
 
 .tituloPrincipal{
     font-family: 'Poppins', sans-serif;
@@ -17,11 +20,6 @@
     font-style: normal;
 }
 
-.texto{
-    margin-right: 30px;
-    width: 380px;
-    height: 194px;
-}
 
 .textoPrincipal_bluebox{
     width: 1157px;

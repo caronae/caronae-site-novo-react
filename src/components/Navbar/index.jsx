@@ -12,7 +12,7 @@ export default function Navbar() {
     <>
     {screenSize > 1100 ?
       <div className="container-navbar">
-        <img src={logo} className="navbar-logo" />
+        <img src={logo} />
         <div className="navbar-menu">
           <div className="navbar-item">
             <Link

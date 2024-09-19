@@ -15,84 +15,86 @@ const URLCaronaeGooglePlayStore = 'https://play.google.com/';
 export default function VaDeCaronae () {
   return (
     <div className={ styles.vaDeCaronae }>
-      <Headings />
-      <BackgroundCircles />
-      <Roads />
-      <PeopleIcon />
-      <ShieldIcon />
-      <LeafIcon />
-      <IphoneFront />
-      <IphoneSide />
-      <CarIcon />
+      <AppGraphics />
+      <CallToAction />
+      <CornerRoad />
+      <VerticalRoad />
+      <HorizontalRoad />
+      <AppStoreButton />
+      <PlayStoreButton />
     </div>
   );
 }
 
-const Headings = () => {
-  return (
-    <div className={ styles.heading }>
-      <h2>Juntos vamos mais longe,</h2>
-      <h1>Vá de Caronaê!</h1>
-    </div>
-  );
-};
+const CallToAction = () => <div className={ styles.callToAction }>
+                             <h2>Juntos vamos mais longe,</h2>
+                             <h1>Vá de Caronaê!</h1>
+                           </div>;
 
-const BackgroundCircles = () => {
+const AppGraphics = () => {
   return (
-    <>
       <div className={ styles.circleOuter }>
-        <div className={ styles.circleInner } />
+        <div className={ styles.circleInner }>
+          <PeopleIcon />
+          <ShieldIcon />
+          <LeafIcon />
+          <IphoneFront />
+          <IphoneSide />
+          <CarIcon />
+        </div>
       </div>
-    </>
   );
 };
 
-const StoreButton = (props) => {
+const PlayStoreButton = () => {
   return (
-    <a className={ styles.storeButton } href={ props.href }>
-      <img src={ props.storeLogo } />
+    <a className={ styles.playStoreButton } href={ URLCaronaeGooglePlayStore }>
+      <img src={ playStoreLogo } />
       <div>
         <p className={ styles.buttonSmallText }>Disponível na</p>
-        <p className={ styles.buttonLargeText }>{ props.storeName }</p>
+        <p className={ styles.buttonLargeText }>Google Play</p>
       </div>
     </a>
   );
 };
 
-const Roads = () => {
+const AppStoreButton = () => {
   return (
-    <div className={ styles.roads }>
-      <VerticalRoad />
-      <div style={{ display: 'flex', gap: '40px', position: 'relative', left: '-60px' }} >
-        <StoreButton storeName="App Store" storeLogo={ appleLogo }
-                     href={ URLCaronaeAppleAppStore } />
-        <StoreButton storeName="Google Play" storeLogo={ playStoreLogo }
-                     href={ URLCaronaeGooglePlayStore } />
+    <a className={ styles.appStoreButton } href={ URLCaronaeAppleAppStore }>
+      <img src={ appleLogo } />
+      <div>
+        <p className={ styles.buttonSmallText }>Disponível na</p>
+        <p className={ styles.buttonLargeText }>App Store</p>
       </div>
-      <div style={{ position: 'relative', left: '-65px' }} >
-        <HorizontalRoad />
-      </div>
-    </div>
+    </a>
   );
 };
 
-const VerticalRoad = () => {
+const VerticalRoad = ({ dashes = '4' }) => {
   return (
     <div className={ styles.verticalRoad } >
-      <div className={ styles.verticalDash } />
-      <div className={ styles.verticalDash } />
-      <div className={ styles.verticalRoadBackground } />
+      {
+        Array.from({ length: dashes }, (_, index) => (
+        <div className={ styles.verticalDash } key={ index }></div>
+      ))}
     </div>
   );
 };
 
-const HorizontalRoad = () => {
+const HorizontalRoad = ({ dashes = '4' }) => {
   return (
     <div className={ styles.horizontalRoad } >
-      <div className={ styles.horizontalDash } />
-      <div className={ styles.horizontalDash } />
-      <div className={ styles.horizontalDash } />
-      <div className={ styles.horizontalDash } />
+      {
+        Array.from({ length: dashes }, (_, index) => (
+        <div className={ styles.horizontalDash } key={ index }></div>
+      ))}
+    </div>
+  );
+};
+
+const CornerRoad = () => {
+  return (
+    <div className={ styles.cornerRoad }>
     </div>
   );
 };
@@ -124,8 +126,8 @@ const LeafIcon = () => {
 const CarIcon = () => {
   return (
     <div className={ styles.carIcon }>
-      <img src={ windIconImg } />
-      <img src={ jeepIconImg } />
+      <img className={ styles.windImg } src={ windIconImg } />
+      <img className={ styles.carImg } src={ jeepIconImg } />
     </div>
   );
 };

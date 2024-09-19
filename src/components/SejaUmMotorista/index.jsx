@@ -62,7 +62,7 @@ const IconCard = ({ backgroundColor, imgSrc }) => {
   return (
     <div className={ styles.iconCard }
          style={{ backgroundColor: backgroundColor }}>
-    <img src={ imgSrc } style={{ width: '80px' }} />
+    <img src={ imgSrc } />
     </div>
   );
 };
@@ -71,7 +71,7 @@ const ImageTextCard = ({ backgroundColor, imgSrc }) => {
   return (
     <div className={ styles.imageTextCard }
          style={{ backgroundColor: backgroundColor }}>
-      <img src={ imgSrc} style={{ width: '190px' }} />
+      <img src={ imgSrc } />
       <h1>Motorista</h1>
     </div>
   );
@@ -82,7 +82,7 @@ const TextImageCard = ({ backgroundColor, imgSrc }) => {
     <div className={ styles.textImageCard }
          style={{ backgroundColor: backgroundColor }}>
     <h1>Passageiro</h1>
-    <img src={ imgSrc } style={{ width: '190px' }} />
+    <img src={ imgSrc } />
     </div>
   );
 };
